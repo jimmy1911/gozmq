@@ -19,8 +19,8 @@
 package gozmq
 
 /*
-#cgo CFLAGS: -I/root/install/zeromq-4.1.3/include
-#cgo LDFLAGS: /root/install/zeromq-4.1.3/.libs/libzmq.a -lstdc++
+#cgo CFLAGS: -I./include
+#cgo LDFLAGS: ./libs/libzmq.a -lstdc++ -lrt -lpthread
 #include <zmq.h>
 */
 import "C"
